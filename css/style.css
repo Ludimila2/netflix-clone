@@ -1,0 +1,102 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background: var(--preto);
+    font-family:'Arial', Times, serif;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 38px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* série principal */
+
+.serie-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50)100%), url("../images/capa.jpeg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.serie-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.serie-principal .titulo {
+    margin-top: 15%;
+    font-size: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.serie-principal .container {
+    width: 70%;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    padding: 15px 25px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
